@@ -247,6 +247,97 @@
       </section>
     </main>
 
+    <!-- 🔥 SPEECHCRAFT-AI — Animated Books Share Icon (Self-Contained) -->
+<a href="https://andrew-davis-ai-portfolio.github.io/-SpeechCraft-AI/"
+   target="_blank"
+   class="sc-books-btn">
+
+  <style>
+    .sc-books-btn {
+      --gold: #f5b544;
+      --gold-soft: rgba(245,181,68,0.18);
+
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 16px;
+      margin: 6px 0;
+      background: radial-gradient(circle at 10% 0, #2a1b0b, #05070c 70%);
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      position: relative;
+      box-shadow: 0 0 0 1px rgba(245,181,68,0.25),
+                  0 10px 25px rgba(0,0,0,0.75);
+      overflow: hidden;
+    }
+
+    .sc-books-btn::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255,255,255,0.18) 50%,
+        transparent 100%
+      );
+      opacity: 0;
+      transform: translateX(-120%);
+      animation: sc-books-shine 4s ease-in-out infinite;
+    }
+
+    .sc-books-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 9px;
+      background: radial-gradient(circle at 20% 0, #ffd58a, #7a5418);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.6),
+                  0 8px 18px rgba(0,0,0,0.75);
+      animation: sc-books-float 2.7s ease-in-out infinite;
+    }
+
+    .sc-book {
+      position: absolute;
+      width: 70%;
+      height: 5px;
+      left: 15%;
+      border-radius: 8px;
+    }
+
+    .sc-book-1 { top: 6px;  background: linear-gradient(90deg,#1a1c28,#444c70); }
+    .sc-book-2 { top: 11px; background: linear-gradient(90deg,#5c3a12,#f5b544); }
+    .sc-book-3 { top: 16px; background: linear-gradient(90deg,#1a1c28,#2980b9); }
+
+    @keyframes sc-books-float {
+      0%,100% { transform: translateY(0px); }
+      50%     { transform: translateY(-3px); }
+    }
+
+    @keyframes sc-books-shine {
+      0%   { opacity: 0; transform: translateX(-120%); }
+      55%  { opacity: 1; transform: translateX(0%); }
+      70%  { opacity: 0; transform: translateX(120%); }
+      100% { opacity: 0; transform: translateX(120%); }
+    }
+  </style>
+
+  <span class="sc-books-icon">
+    <span class="sc-book sc-book-1"></span>
+    <span class="sc-book sc-book-2"></span>
+    <span class="sc-book sc-book-3"></span>
+  </span>
+
+  <span>Open SpeechCraft-AI</span>
+</a>
+
     <!-- FOOTER -->
     <footer class="sc-footer">
       <p>© <span id="year"></span> SpeechCraft AI · A Flame Division Experiment in Human-First Communication.</p>
