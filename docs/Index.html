@@ -1,1 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SpeechCraft AI — The World’s First Speech Training Partner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- HEADER -->
+    <header class="sc-header">
+      <div class="sc-logo">
+        <span class="sc-logo-mark">SC</span>
+        <div class="sc-logo-text">
+          <h1>SpeechCraft AI</h1>
+          <p>The World’s First Speech Training Partner</p>
+        </div>
+      </div>
 
+      <nav class="sc-nav">
+        <a href="#demo">Live Demo</a>
+        <a href="#modes">Modes</a>
+        <a href="#about">Why It’s Different</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <h2>Not a generator. Not a chatbot.<br />A training partner.</h2>
+          <p class="hero-sub">
+            Built for humans who communicate for impact — speakers, clinicians, and teachers
+            who need clarity, presence, and delivery on command.
+          </p>
+
+          <ul class="hero-points">
+            <li>🎤 Practice real talks, not canned scripts</li>
+            <li>🧠 Train structure, pacing, and audience alignment</li>
+            <li>📢 Use built-in text-to-speech to rehearse anywhere</li>
+          </ul>
+
+          <a href="#demo" class="btn btn-primary">Launch Training Demo</a>
+        </div>
+
+        <div class="hero-art">
+          <!-- Use your uploaded image name/path -->
+          <img src="speechcraft-ai.png"
+               alt="SpeechCraft AI — Instructor guiding a class with tablet" />
+        </div>
+      </section>
+
+      <!-- MODES OVERVIEW -->
+      <section id="modes" class="modes">
+        <h3 class="section-title">Three Training Lanes. One Core Engine.</h3>
+        <p class="section-sub">
+          Switch between Inspiration, Medical, and Teacher modes. Same engine, different
+          scenarios — so your delivery stays sharp in any room.
+        </p>
+
+        <div class="mode-grid">
+          <article class="mode-card">
+            <h4>🔥 Inspiration Mode</h4>
+            <p>
+              Sharpen your story arcs, hooks, and calls-to-action for stages, podcasts,
+              and keynotes. Focus on energy, pacing, and memorable lines.
+            </p>
+            <ul>
+              <li>Practice opening hooks</li>
+              <li>Refine story beats</li>
+              <li>Strengthen closing impact</li>
+            </ul>
+          </article>
+
+          <article class="mode-card">
+            <h4>🩺 Medical Mode</h4>
+            <p>
+              Train how you explain complex medical ideas in plain language — for patients,
+              families, and interdisciplinary teams.
+            </p>
+            <ul>
+              <li>Simplify clinical language</li>
+              <li>Practice informed consent talks</li>
+              <li>Balance empathy with precision</li>
+            </ul>
+          </article>
+
+          <article class="mode-card">
+            <h4>📚 Teacher Mode</h4>
+            <p>
+              Rehearse lectures, classroom explanations, and lesson intros with a focus on
+              clarity, structure, and student engagement.
+            </p>
+            <ul>
+              <li>Warm-up mini-lessons</li>
+              <li>Check clarity of instructions</li>
+              <li>Refine transitions & summaries</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- LIVE DEMO TRAINER -->
+      <section id="demo" class="demo">
+        <div class="demo-header">
+          <h3 class="section-title">SpeechCraft Live Trainer (Demo)</h3>
+          <p class="section-sub">
+            Pick your lane, set the scenario, and let the coach voice walk you into a
+            real-world practice rep. No scripts — you bring the content, SpeechCraft AI
+            shapes the reps.
+          </p>
+        </div>
+
+        <!-- MODE TABS -->
+        <div class="mode-switch">
+          <button class="mode-switch-btn active" data-mode="inspiration">
+            🔥 Inspiration
+          </button>
+          <button class="mode-switch-btn" data-mode="medical">
+            🩺 Medical
+          </button>
+          <button class="mode-switch-btn" data-mode="teacher">
+            📚 Teacher
+          </button>
+        </div>
+
+        <!-- INPUT GRID -->
+        <div class="demo-grid">
+          <div class="demo-inputs">
+            <h4 class="demo-label">Scenario Setup</h4>
+
+            <label class="field">
+              <span>Topic</span>
+              <input id="topicInput" type="text"
+                     placeholder="e.g., Overcoming burnout / Explaining hypertension / Intro to fractions" />
+            </label>
+
+            <label class="field">
+              <span>Audience</span>
+              <input id="audienceInput" type="text"
+                     placeholder="e.g., 500-person conference / family in clinic / 7th-grade class" />
+            </label>
+
+            <label class="field">
+              <span>Outcome</span>
+              <input id="outcomeInput" type="text"
+                     placeholder="e.g., Inspire action / Clarify diagnosis / Help them master a concept" />
+            </label>
+
+            <div class="tts-controls">
+              <div class="tts-slider">
+                <label for="rateRange">Voice speed</label>
+                <input id="rateRange" type="range" min="0.7" max="1.5" step="0.05" value="1" />
+              </div>
+              <div class="tts-slider">
+                <label for="pitchRange">Voice tone</label>
+                <input id="pitchRange" type="range" min="0.7" max="1.5" step="0.05" value="1" />
+              </div>
+            </div>
+
+            <button id="buildPromptBtn" class="btn btn-primary full">
+              ⚙️ Build Coaching Script
+            </button>
+
+            <p class="hint">
+              Tip: speak out loud when the coach voice finishes. Treat every rep like a real
+              room.
+            </p>
+          </div>
+
+          <!-- COACH + USER PRACTICE AREA -->
+          <div class="demo-coach">
+            <div class="coach-card">
+              <div class="coach-header">
+                <span class="chip">Coach Voice</span>
+                <span class="chip chip-mode" id="activeModeChip">🔥 Inspiration Mode</span>
+              </div>
+              <textarea id="coachText" rows="7"
+                        placeholder="Your coaching script will appear here.">
+              </textarea>
+              <div class="coach-actions">
+                <button id="playCoachBtn" class="btn">
+                  ▶️ Play Coach
+                </button>
+                <button id="stopTtsBtn" class="btn btn-ghost">
+                  ⏹ Stop
+                </button>
+              </div>
+            </div>
+
+            <div class="coach-card">
+              <div class="coach-header">
+                <span class="chip">Your Practice Notes</span>
+                <span class="chip chip-soft" id="wordCountChip">0 words</span>
+              </div>
+              <textarea id="userText" rows="6"
+                        placeholder="Draft key lines, bullet points, or your full practice script here."></textarea>
+              <div class="coach-actions">
+                <button id="playUserBtn" class="btn">
+                  🎧 Hear My Script
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="tts-warning">
+          🔊 Text-to-speech uses your browser’s built-in voice engine. For best results, open this
+          page in Chrome, Edge, or Safari on desktop or mobile.
+        </p>
+      </section>
+
+      <!-- ABOUT / PHILOSOPHY -->
+      <section id="about" class="about">
+        <h3 class="section-title">Why SpeechCraft AI Exists</h3>
+        <p class="section-sub">
+          Most tools generate content. SpeechCraft AI trains <strong>craft</strong>.
+          It mirrors intent, tests clarity, and helps you refine your real voice —
+          not replace it.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h4>Always-On Practice</h4>
+            <p>
+              No more waiting for a coach, a class, or a live audience. Run reps on demand
+              and let the trainer script keep you focused.
+            </p>
+          </div>
+          <div class="about-card">
+            <h4>Zero-Judgment Rehearsal</h4>
+            <p>
+              Make mistakes in private so you can deliver with confidence in public.
+              Tweak wording, cadence, and structure without pressure.
+            </p>
+          </div>
+          <div class="about-card">
+            <h4>Human Voice First</h4>
+            <p>
+              SpeechCraft AI assumes you already have something to say. Its job is to help
+              you say it clearly, confidently, and responsibly — not to flatten your voice
+              into generic AI output.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="sc-footer">
+      <p>© <span id="year"></span> SpeechCraft AI · A Flame Division Experiment in Human-First Communication.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
