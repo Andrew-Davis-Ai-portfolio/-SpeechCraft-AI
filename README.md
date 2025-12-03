@@ -2,6 +2,24 @@
   <img src="speechcraft-ai.png" alt="SpeechCraft AI — Instructor-Led Speech Training" width="700">
 </p>
 
+<a href="https://andrew-davis-ai-portfolio.github.io/-SpeechCraft-AI/"
+   target="_blank"
+   style="
+     display:inline-flex;
+     align-items:center;
+     gap:8px;
+     padding:10px 16px;
+     border-radius:12px;
+     background:linear-gradient(135deg,#f5b544,#ffcf5d);
+     color:#000;
+     font-weight:600;
+     font-size:15px;
+     text-decoration:none;
+     box-shadow:0 4px 14px rgba(0,0,0,0.35);
+   ">
+  📚 <span>Open SpeechCraft-AI</span>
+</a>
+
 🎤 SpeechCraft AI — The World’s First Speech Training Partner
 
 Not a generator.
