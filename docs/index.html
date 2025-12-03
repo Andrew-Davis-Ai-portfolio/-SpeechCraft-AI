@@ -346,7 +346,7 @@
 
   <script src="app.js"></script>
 
-  <!-- 🔥 FLOATING SPEECHCRAFT BADGE — Self-Contained -->
+  <!-- 🔥 ULTRA INSTINCT FLOATING SPEECHCRAFT BADGE -->
 <a href="https://andrew-davis-ai-portfolio.github.io/-SpeechCraft-AI/"
    target="_blank"
    class="sc-float-btn">
@@ -375,15 +375,29 @@
 
       box-shadow: 0 0 0 1px rgba(245,181,68,0.3),
                   0 8px 18px rgba(0,0,0,0.7),
-                  0 0 12px rgba(245,181,68,0.3);
+                  0 0 14px rgba(245,181,68,0.35);
 
       animation: sc-float 3s ease-in-out infinite;
+      position: fixed;
+    }
+
+    /* Gold aura pulse */
+    .sc-float-btn::before {
+      content: "";
+      position: absolute;
+      inset: -6px;
+      border-radius: inherit;
+      background: radial-gradient(circle, rgba(245,181,68,0.27), transparent 60%);
+      filter: blur(2px);
+      opacity: 0.4;
+      z-index: -1;
+      animation: sc-aura 2.8s ease-in-out infinite;
     }
 
     .sc-float-btn:hover {
       transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 0 22px rgba(245,181,68,0.55),
-                  0 10px 24px rgba(0,0,0,0.9);
+      box-shadow: 0 0 22px rgba(245,181,68,0.65),
+                  0 10px 26px rgba(0,0,0,0.95);
     }
 
     .sc-icon {
@@ -410,15 +424,98 @@
 
     .sc-book-1 { top: 7px;  background: linear-gradient(90deg,#1a1c28,#444c70); }
     .sc-book-2 { top: 13px; background: linear-gradient(90deg,#5c3a12,#f5b544); }
-    .sc-book-3 { top: 19px; background: linear-gradient(90deg,#1a1c28,#2980b9); }
+
+    /* Top book flips like it’s opening */
+    .sc-book-3 {
+      top: 19px;
+      background: linear-gradient(90deg,#1a1c28,#2980b9);
+      transform-origin: left center;
+      animation: sc-book-flip 3.2s ease-in-out infinite;
+    }
+
+    /* Tooltip */
+    .sc-label-wrapper {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .sc-tip {
+      position: absolute;
+      right: 100%;
+      bottom: 50%;
+      transform: translateY(50%);
+      margin-right: 10px;
+
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: #05070c;
+      border: 1px solid rgba(245,181,68,0.5);
+      color: #f7f7ff;
+      font-size: 11px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+
+      box-shadow: 0 6px 16px rgba(0,0,0,0.8);
+      transition: opacity 0.18s ease-out, transform 0.18s ease-out;
+    }
+
+    .sc-tip::after {
+      content: "";
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      border-width: 6px;
+      border-style: solid;
+      border-color: transparent transparent transparent #05070c;
+    }
+
+    .sc-float-btn:hover .sc-tip {
+      opacity: 1;
+      transform: translateY(50%) translateX(-2px);
+    }
 
     /* Floating animation */
     @keyframes sc-float {
       0%, 100% {
-        transform: translateY(0px);
+        transform: translateY(0);
       }
       50% {
         transform: translateY(-4px);
+      }
+    }
+
+    /* Aura breathing */
+    @keyframes sc-aura {
+      0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.6;
+        transform: scale(1.06);
+      }
+    }
+
+    /* Book flip */
+    @keyframes sc-book-flip {
+      0%, 20%, 100% {
+        transform: rotateY(0deg);
+      }
+      35% {
+        transform: rotateY(-50deg);
+      }
+      50% {
+        transform: rotateY(-80deg);
+      }
+      65% {
+        transform: rotateY(-50deg);
+      }
+      80% {
+        transform: rotateY(0deg);
       }
     }
   </style>
@@ -429,7 +526,10 @@
     <span class="sc-book sc-book-3"></span>
   </span>
 
-  <span>SpeechCraft-AI</span>
+  <span class="sc-label-wrapper">
+    <span class="sc-tip">Open SpeechCraft-AI</span>
+    <span>SpeechCraft-AI</span>
+  </span>
 </a>
 </body>
 </html>
