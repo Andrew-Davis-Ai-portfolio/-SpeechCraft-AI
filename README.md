@@ -3,20 +3,14 @@
 </p>
 
 <a href="https://andrew-davis-ai-portfolio.github.io/-SpeechCraft-AI/"
-   target="_blank"
-   style="
-     display:inline-flex;
-     align-items:center;
-     gap:6px;
-     padding:6px 12px;
-     background:#101624;
-     border:1px solid #f5b54455;
-     border-radius:50px;
-     color:#f5b544;
-     font-size:14px;
-     text-decoration:none;
-   ">
-  📚 <span>SpeechCraft-AI</span>
+   target="_blank" rel="noopener"
+   class="books-share-btn">
+  <span class="books-icon">
+    <span class="book book-1"></span>
+    <span class="book book-2"></span>
+    <span class="book book-3"></span>
+  </span>
+  <span class="books-label">Open SpeechCraft-AI</span>
 </a>
 
 🎤 SpeechCraft AI — The World’s First Speech Training Partner
