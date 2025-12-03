@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="speechcraft-ai.png" alt="SpeechCraft AI — Instructor-Led Speech Training" width="700">
+</p>
+
 🎤 SpeechCraft AI — The World’s First Speech Training Partner
 
 Not a generator.
