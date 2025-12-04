@@ -158,3 +158,107 @@ This tool is built to train it responsibly.
 
 SpeechCraft AI is not here to speak for humans.
 It exists to sharpen the humans who speak.
+
+---
+
+⚖️ SpeechCraft AI — Responsible Use & Legal Notice
+
+Purpose & Scope
+
+SpeechCraft AI is an educational communication and speech-training tool.
+
+Its purpose is to help users:
+	•	Think clearly before speaking
+	•	Express ideas with confidence
+	•	Improve structure, tone, and delivery
+	•	Communicate more responsibly in professional and personal settings
+
+SpeechCraft AI is not a voice replacement.
+It exists to strengthen the human behind the words, not to speak on their behalf.
+
+⸻
+
+Human-in-the-Loop Requirement
+
+All speech, messaging, and communication outcomes remain fully human-controlled.
+
+SpeechCraft AI:
+	•	Offers guidance, suggestions, and practice feedback
+	•	Helps users reflect on clarity and intent
+
+SpeechCraft AI does not:
+	•	Speak for users
+	•	Make decisions
+	•	Manipulate audiences
+	•	Guarantee communication outcomes
+
+You are always responsible for what you say, how you say it, and when you say it.
+
+⸻
+
+No Advice or Authority
+
+SpeechCraft AI does not provide:
+	•	Legal advice
+	•	Medical advice
+	•	Psychological treatment
+	•	Financial guidance
+	•	Professional certification
+
+It is a training and practice environment only.
+
+⸻
+
+Ethical Communication Boundary
+
+SpeechCraft AI is designed to:
+	•	Preserve authentic human voice
+	•	Encourage honest communication
+	•	Support ethical expression
+
+It is not intended for:
+	•	Deception or coercion
+	•	Impersonation
+	•	Emotional manipulation
+	•	Harassment or abuse
+
+Misuse of the system violates its intended purpose.
+
+⸻
+
+No Guarantee of Results
+
+Use of SpeechCraft AI does not guarantee:
+	•	Persuasive success
+	•	Approval by others
+	•	Professional advancement
+	•	Emotional or relational outcomes
+
+Communication effectiveness always depends on real-world context, human judgment, and accountability.
+
+⸻
+
+Technology Limitations
+
+SpeechCraft AI relies on pattern recognition and language modeling.
+It may:
+	•	Make mistakes
+	•	Misinterpret nuance
+	•	Offer imperfect suggestions
+
+Users should apply critical thinking and discretion at all times.
+
+⸻
+
+Limitation of Liability
+
+To the fullest extent allowed by law:
+	•	The creators and maintainers of SpeechCraft AI are not liable for any consequences arising from its use.
+	•	All usage is at the user’s own discretion and risk.
+
+⸻
+
+Final Principle
+
+Speech is power.
+SpeechCraft AI is here to help you train it — responsibly.
