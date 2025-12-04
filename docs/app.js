@@ -483,7 +483,7 @@ function runLocalAssessment() {
     );
   }
 
-  // Build output in required format
+    // Build output in required format
   const output = [
     "ASSESSMENT SUMMARY",
     "",
@@ -522,6 +522,9 @@ function runLocalAssessment() {
     // Fallback if textarea is missing
     alert(output);
   }
+
+  // 🔊 Speak the damage out loud
+  speakText(output);
 }
 
 // --------------------
