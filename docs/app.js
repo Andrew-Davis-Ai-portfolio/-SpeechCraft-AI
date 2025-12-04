@@ -163,6 +163,11 @@ modeButtons.forEach((btn) => {
   });
 });
 
+document.getElementById("runAssessmentBtn").addEventListener("click", (e) => {
+  e.preventDefault();
+  runAssessment();
+});
+
 buildPromptBtn.addEventListener("click", (e) => {
   e.preventDefault();
   buildCoachScript();
