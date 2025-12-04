@@ -1,5 +1,10 @@
 // SpeechCraft AI – Demo Trainer JS
 
+// 🔥 ASSESSMENT COACH SYSTEM PROMPT
+const ASSESSMENT_COACH_PROMPT = `
+  ...FULL SYSTEM PROMPT BLOCK GOES HERE...
+`;
+
 const modeButtons = document.querySelectorAll(".mode-switch-btn");
 const activeModeChip = document.getElementById("activeModeChip");
 const topicInput = document.getElementById("topicInput");
