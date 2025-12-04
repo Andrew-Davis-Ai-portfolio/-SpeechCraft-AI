@@ -190,17 +190,30 @@
             </div>
 
             <div class="coach-card">
-              <div class="coach-header">
-                <span class="chip">Your Practice Notes</span>
-                <span class="chip chip-soft" id="wordCountChip">0 words</span>
-              </div>
-              <textarea id="userText" rows="6"
-                        placeholder="Draft key lines, bullet points, or your full practice script here."></textarea>
-              <div class="coach-actions">
-                <button id="playUserBtn" class="btn">
-                  🎧 Hear My Script
-                </button>
-              </div>
+  <div class="coach-header">
+    <span class="chip">Your Practice Notes</span>
+    <span class="chip chip-soft" id="wordCountChip">0 words</span>
+  </div>
+
+  <textarea id="userText" rows="6"
+            placeholder="Draft key lines, bullet points, or your full practice script here."></textarea>
+
+  <div class="coach-actions">
+    <button id="playUserBtn" class="btn">
+      🎧 Hear My Script
+    </button>
+
+    <!-- NEW: run assessment button -->
+    <button id="runAssessmentBtn" class="btn btn-secondary">
+      🧪 Run Assessment
+    </button>
+  </div>
+
+  <!-- NEW: assessment output box -->
+  <textarea id="assessmentOutput" rows="7"
+            class="assessment-box"
+            placeholder="Assessment Coach feedback will appear here after you run assessment."></textarea>
+</div>
             </div>
           </div>
         </div>
