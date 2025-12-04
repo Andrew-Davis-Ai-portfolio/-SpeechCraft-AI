@@ -124,6 +124,34 @@ function stopSpeaking() {
   }
 }
 
+// --- ASSESSMENT ENGINE (AI CALL) ---
+
+async function runAssessment() {
+  const userSpeech = userText.value.trim();
+
+  if (!userSpeech) {
+    alert("Write your speech first before running assessment.");
+    return;
+  }
+
+  // Combine system prompt + user speech
+  const fullPrompt = `
+${ASSESSMENT_COACH_PROMPT}
+
+USER SPEECH:
+"${userSpeech}"
+`;
+
+  // 🔥 This part assumes you're using a Mini-KSM / GPT call.
+  // Replace this with your actual fetch to KSM or GPT endpoint.
+
+  const result = await window.ai?.run(fullPrompt);
+
+  // Display result
+  document.getElementById("assessmentOutput").value =
+    result || "No response from Assessment Coach.";
+}
+
 // --- EVENT HANDLERS ---
 
 modeButtons.forEach((btn) => {
